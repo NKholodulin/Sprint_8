@@ -8,35 +8,43 @@ public class Praktikum {
          */
         String name = "а а";
         Account accountCorrect3 = new Account(name);
-        System.out.println(accountCorrect3.checkNameToEmboss());
+        boolean canEmboss = accountCorrect3.checkNameToEmboss();
+        System.out.println("Можно ли использовать имя для печати: " + canEmboss);
 
         name = "Аладщкда Ааывсывацк";
         Account accountCorrect19 = new Account(name);
-        System.out.println(accountCorrect19.checkNameToEmboss());
+        canEmboss = accountCorrect19.checkNameToEmboss();
+        System.out.println("Можно ли использовать имя для печати: " + canEmboss);
 
         name = "вз";
         Account accountIncorrect2 = new Account(name);
-        System.out.println(accountIncorrect2.checkNameToEmboss());
+        canEmboss = accountIncorrect2.checkNameToEmboss();
+        System.out.println("Можно ли использовать имя для печати: " + canEmboss);
 
         name = "Аладщкдай Ааывсывацк";
         Account accountIncorrect20 = new Account(name);
-        System.out.println(accountIncorrect20.checkNameToEmboss());
+        canEmboss = accountIncorrect20.checkNameToEmboss();
+        System.out.println("Можно ли использовать имя для печати: " + canEmboss);
 
         name = "аааа";
         Account accountWithoutSpace = new Account(name);
-        System.out.println(accountWithoutSpace.checkNameToEmboss());
+        canEmboss = accountWithoutSpace.checkNameToEmboss();
+        System.out.println("Можно ли использовать имя для печати: " + canEmboss);
 
         name = "а  а";
         Account accountWith2Space = new Account(name);
-        System.out.println(accountWith2Space.checkNameToEmboss());
+        canEmboss = accountWith2Space.checkNameToEmboss();
+        System.out.println("Можно ли использовать имя для печати: " + canEmboss);
 
         name = " аа";
         Account accountWithStartSpace = new Account(name);
-        System.out.println(accountWithStartSpace.checkNameToEmboss());
+        canEmboss = accountWithStartSpace.checkNameToEmboss();
+        System.out.println("Можно ли использовать имя для печати: " + canEmboss);
 
         name = "аа ";
         Account accountWithEndSpace = new Account(name);
-        System.out.println(accountWithEndSpace.checkNameToEmboss());
+        canEmboss = accountWithEndSpace.checkNameToEmboss();
+        System.out.println("Можно ли использовать имя для печати: " + canEmboss);
     }
 
 }
